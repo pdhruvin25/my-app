@@ -34,7 +34,7 @@ const About = () => {
               <MdArticle className="about__icon" />
               <h5>Recent Blogs</h5>
               <small>A World Where AI Meets Medicine</small>
-              <a href = "https://www.racetoacure.org/post/artificial-intelligence-the-future-of-medicine?gclid=Cj0KCQjwoeemBhCfARIsADR2QCs3RBY5LUM8cq7hwwwNOyqmoFUK5_kAgNLTHS63LrLKstWF628F0KsaAvLrEALw_wcB">Blog</a>
+              {/* <a href = "https://www.racetoacure.org/post/artificial-intelligence-the-future-of-medicine?gclid=Cj0KCQjwoeemBhCfARIsADR2QCs3RBY5LUM8cq7hwwwNOyqmoFUK5_kAgNLTHS63LrLKstWF628F0KsaAvLrEALw_wcB">Blog</a> */}
             </article>
           </div>
           <p>

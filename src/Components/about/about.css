@@ -5,24 +5,26 @@
 }
 
 .about__me {
-    width: 100%;
+    width: 80%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
-    background: linear-gradient(45def, transparent, var(--primary_colour), transparent);
+    background: linear-gradient(45deg, transparent, var(--primary_colour), transparent);
     display: grid;
     place-items: center;
 
 }
 
 .about__me-image {
-    border-radius: 2rem;
+    border-radius: 5rem;
     overflow: hidden;
-    transform: rotate(10deg);
+    transform: rotate(0deg);
     transition: var(--transition1);
+    height: 101%;
+    background: linear-gradient(225deg, transparent, var(--primary_colour_variant), transparent);
 }
 
 .about__me-image:hover {
-    transform: rotate(0);
+    transform: rotate(10deg);
 }
 
 .about__cards {
@@ -32,7 +34,7 @@
 }
 
 .about__card {
-    background: var(background_colour-variant);
+    background: var(--background_colour_variant);
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 2rem;
@@ -43,7 +45,7 @@
 
 .about__card:hover {
     background: transparent;
-    border-color: var(--primary_colour-variant);
+    border-color: var(--primary_colour_variant);
     cursor: default;
 }
 
@@ -87,14 +89,13 @@
 
 /*Small Screen*/
 @media screen and (max-width: 600px) {
-    .about__me {
-        width: 65%;
-        margin: 0 auto 3rem;
+    .experience__container {
+        gap: 1rem;
     }
 
-    .about__cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+    .experience__container > div {
+        width: 100%;
+padding: 2rem 1rem;
     }
 
     .about__content {
