@@ -67,7 +67,7 @@
 
 .about__content p {
     margin: 2rem 0 2.6rem;
-    color: var(--light_gray);
+    color: var(--primary_colour);
 }
 
 /*Medium Screen*/
@@ -84,6 +84,7 @@
 
     .about__content p {
         margin: 1rem 0 1.5rem;
+        color:var(--primary_colour);
     }
 }
 

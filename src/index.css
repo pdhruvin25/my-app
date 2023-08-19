@@ -14,12 +14,21 @@ text-decoration: none;
 }
 
 :root{
---background_colour:#1f1f38;
+/* --background_colour:#1f1f38;
 --background_colour_variant:#2c2c6c;
 --primary_colour:#4db5ff;
 --primary_colour_variant:rgba(77, 181, 255, 0.4);
 --light_gray:rgba(255, 255, 255, 0.6);
---white: #FFFFFF;
+--white: #FFFFFF;*/
+
+
+--background_colour:#231F20;
+--background_colour_variant:#91805b;
+--primary_colour:#EDE4D6;
+--primary_colour_variant:#F4F4F4;
+--light_gray:#F4F4F4;
+
+--white: #EDE4D6;
 
 --container_width_large: 75%;
 --container_width_medium:86%;

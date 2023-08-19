@@ -6,7 +6,7 @@ const Info = () => {
   return (
     <div className='Info'>
 <a href= {CV} download className='btn'>Download Resume</a>
-<a href= "#contact" className='btn btn-primary'>Lets Talk</a>
+<a href= "#contact" className='btn'>Lets Talk</a>
 
     </div>
   )
