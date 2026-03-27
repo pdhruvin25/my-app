@@ -21,12 +21,12 @@ const App = () => {
   return (
     <>
 <Header/>
-    <About/>
     <NavBar/>
-    <Experience/>
-    <Services/>
-    <Projects/>
     <Education/>
+    <Services/>
+    <Experience/>
+    <Projects/>
+    <About/>
     <Contact/>
     <Footer/>
     </>

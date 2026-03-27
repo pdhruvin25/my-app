@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.css";
 import Info from "./Info";
-import ME from "../../me_new.png";
+import ME from "../../NewPhoto.jpg";
 import HeaderSocials from "./HeaderSocials";
 import { AiOutlineArrowRight } from "react-icons/ai";
 

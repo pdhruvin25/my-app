@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from "../../Resume_New.pdf"
+import CV from "../../Dhruvin_Patel.pdf"
 
 
 const Info = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "../../me_new.png";
+import ME from "../../NewPhoto.jpg";
 import { FaAward } from "react-icons/fa";
 import {BsFillRocketTakeoffFill} from  "react-icons/bs";
 import {MdArticle} from "react-icons/md";
