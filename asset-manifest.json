@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.5d28abab.css",
-    "main.js": "/my-app/static/js/main.2f367d58.js",
+    "main.css": "/my-app/static/css/main.1b1a1a48.css",
+    "main.js": "/my-app/static/js/main.c878e5d9.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
-    "static/media/me_new.png": "/my-app/static/media/me_new.2ddb00c15ee78a1866bc.png",
-    "static/media/Resume_New.pdf": "/my-app/static/media/Resume_New.fef500f6853ecab40445.pdf",
-    "static/media/topography.png": "/my-app/static/media/topography.2e3593b9a09314161232.png",
+    "static/media/Dhruvin_Patel.pdf": "/my-app/static/media/Dhruvin_Patel.6e7243ffdf4cc51fb671.pdf",
+    "static/media/NewPhoto.jpg": "/my-app/static/media/NewPhoto.c21cc648fdce661f2f3d.jpg",
     "index.html": "/my-app/index.html",
-    "main.5d28abab.css.map": "/my-app/static/css/main.5d28abab.css.map",
-    "main.2f367d58.js.map": "/my-app/static/js/main.2f367d58.js.map",
+    "main.1b1a1a48.css.map": "/my-app/static/css/main.1b1a1a48.css.map",
+    "main.c878e5d9.js.map": "/my-app/static/js/main.c878e5d9.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d28abab.css",
-    "static/js/main.2f367d58.js"
+    "static/css/main.1b1a1a48.css",
+    "static/js/main.c878e5d9.js"
   ]
 }
