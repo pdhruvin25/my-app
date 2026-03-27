@@ -22,8 +22,8 @@
 
   --background_colour: #231F20;
   --background_colour_variant: #20232a;
-  --primary_colour: #61dafb;
-  --primary_colour_variant: #52BEE0;
+  --primary_colour: #0f766e; /* A sophisticated dark teal */
+  --primary_colour_variant: #115e59;
   --light_gray: #d6d6d6;
   --light_green: #19715c;
 
@@ -91,6 +91,7 @@ section>h5 {
 section>h2 {
   color: var(--primary_colour);
   margin-bottom: 3rem;
+  text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.5); /* Subtle white glow to maintain readability on dark top backgrounds */
 }
 
 .text_light {
