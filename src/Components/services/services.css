@@ -5,12 +5,13 @@
 }
 
 .service {
-    background: var(--primary_colour);
+    background: rgba(32, 35, 42, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
     border-radius: 0rem 0rem 2rem 2rem;
-    border: 1px solid var(--primary_colour);
     height: fit-content;
     transition: var(--transition1);
-
 }
 
 .service:hover  {
@@ -40,9 +41,8 @@
     background: transparent;
     padding: 2rem;
     border-radius: 2rem 2rem 2rem 2rem;
-    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
     transition: var(--transition1);
-    color: var(--background_colour)
+    color: var(--white)
 }
 
 .service__head h3 {
@@ -85,7 +85,7 @@
 
 .service__list p {
     font-size: 0.9rem;
-color: var(--background_colour);
+color: var(--white);
 transition: var(--transition1);
 
 }

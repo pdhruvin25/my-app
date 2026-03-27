@@ -34,13 +34,14 @@
 }
 
 .about__card {
-    background: var(--background_colour_variant);
-    border: 1px solid transparent;
+    background: rgba(32, 35, 42, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
     transition: var(--transition1);
-
 }
 
 .about__card:hover {
