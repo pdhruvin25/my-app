@@ -6,7 +6,6 @@ import UofTLogo from '../../Utoronto_coa.svg.png';
 const Education = () => {
   return (
     <section id="education">
-      <h5>Where I Studied</h5>
       <h2>Education</h2>
       <div className="container education__container">
         <article className="education__card">
