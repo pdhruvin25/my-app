@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.1b1a1a48.css",
-    "main.js": "/my-app/static/js/main.c878e5d9.js",
+    "main.css": "/my-app/static/css/main.06d109c3.css",
+    "main.js": "/my-app/static/js/main.299efecb.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Utoronto_coa.svg.png": "/my-app/static/media/Utoronto_coa.svg.8d14e58cbadf14d954eb.png",
     "static/media/Dhruvin_Patel.pdf": "/my-app/static/media/Dhruvin_Patel.6e7243ffdf4cc51fb671.pdf",
     "static/media/NewPhoto.jpg": "/my-app/static/media/NewPhoto.c21cc648fdce661f2f3d.jpg",
+    "static/media/topography.png": "/my-app/static/media/topography.2e3593b9a09314161232.png",
     "index.html": "/my-app/index.html",
-    "main.1b1a1a48.css.map": "/my-app/static/css/main.1b1a1a48.css.map",
-    "main.c878e5d9.js.map": "/my-app/static/js/main.c878e5d9.js.map",
+    "main.06d109c3.css.map": "/my-app/static/css/main.06d109c3.css.map",
+    "main.299efecb.js.map": "/my-app/static/js/main.299efecb.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b1a1a48.css",
-    "static/js/main.c878e5d9.js"
+    "static/css/main.06d109c3.css",
+    "static/js/main.299efecb.js"
   ]
 }
