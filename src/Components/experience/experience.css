@@ -28,20 +28,21 @@
 
 
 
-.experience__category h3{
-color: var(--background_colour);
-transition: var(--transition1);
+.experience__category h3 {
+    color: var(--white);
+    transition: var(--transition1);
 }
 
-.experience__category:hover h3{
-color: var(--primary_colour);
+.experience__category:hover h3 {
+    color: var(--primary_colour);
 }
 
 
 .experience__category>div h4 {
     transition: var(--transition1);
-    color: var(--background_colour);
+    color: var(--white);
 }
+
 .experience__category:hover h4 {
 
     color: var(--primary_colour);
@@ -50,8 +51,9 @@ color: var(--primary_colour);
 
 .experience__category>div small {
     transition: var(--transition1);
-    color: var(--background_colour_variant);
+    color: var(--light_gray);
 }
+
 .experience__category:hover small {
 
     color: var(--primary_colour);
@@ -77,7 +79,7 @@ color: var(--primary_colour);
 
 .experience__details-icon {
     margin-top: 6px;
-    color: var(--background_colour_variant);
+    color: var(--primary_colour_variant);
 }
 
 
