@@ -51,21 +51,24 @@ const Contact = () => {
 <h2>Contact Me</h2>
 <div className="container contact__container">
 <div className="contact contact__options">
-  <a href="mailto:pateldhruvin2503@gmail.com" target='_blank' rel="noreferrer" className='contact__option'>
-    <MdOutlineEmail className='contact__option-icon'/>
-    <h4>Email</h4>
-    <h5>pateldhruvin2503@gmail.com</h5>
-  </a>
-  <a href="https://instagram.com/dhruv_in_25/" target='_blank' rel="noreferrer" className='contact__option'>
-    <BsInstagram className='contact__option-icon'/>
-    <h4>Instagram</h4>
-    <h5>dhruv_in_25</h5>
-  </a>
-  <a href="https://api.whatsapp.com/send?phone=+16473444827" target='_blank' rel="noreferrer" className='contact__option'>
-    <BsWhatsapp className='contact__option-icon'/>
-    <h4>WhatsApp</h4>
-    <h5>+123456789</h5>
-  </a>
+<article className='contact__option'>
+<MdOutlineEmail className='contact__option-icon'/>
+  <h4>Email</h4>
+  <h5>pateldhruvin2503@gmail.com</h5>
+  <a href = "mailto:pateldhruvin2503@gmail.com" target='blank'>Send An Email</a>
+</article>
+<article className='contact__option'>
+<BsInstagram className='contact__option-icon'/>
+  <h4>Instagram</h4>
+  <h5>dhruv_in_25</h5>
+  <a href = "https://instagram.com/dhruv_in_25/" target='blank'>Follow Me</a>
+</article>
+<article className='contact__option'>
+<BsWhatsapp className='contact__option-icon'/>
+  <h4>WhatsApp</h4>
+  <h5>+123456789</h5>
+  <a href = "https://api.whatsapp.com/send?phone=+16473444827" target='blank'>Send A Message</a>
+</article>
 </div>
 <form ref = {form} onSubmit={sendEmail}>
 <input type = 'text' name = 'name' placeholder='Full Name' required></input>

@@ -20,8 +20,6 @@
   border-radius: 1.2rem;
   text-align: center;
   transition: var(--transition1);
-  display: block;
-  color: var(--white);
 }
 
 .contact__option:hover {
@@ -30,14 +28,30 @@
   border-color: var(--primary_colour);
 }
 
-.contact__option h4 {
-  color: var(--white);
-}
-
 .contact__option-icon {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: var(--primary_colour);
+}
+
+.contact__option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  border: 1px solid;
+  font-size: 0.8rem;
+  border-color: transparent;
+
+  padding: 5px 15px 5px 15px;
+  background: var(--primary_colour);
+  color: black;
+  border-radius: 2rem 2rem 2rem 2rem;
+}
+
+.contact__option a:hover {
+  border: 1px solid;
+  border-color: var(--primary_colour);
+  background: transparent;
+  ;
+  color: var(--white);
 }
 
 
