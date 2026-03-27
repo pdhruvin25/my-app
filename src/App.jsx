@@ -1,9 +1,11 @@
 import { useEffect } from "react";
 import Header from "./Components/header/Header";
-import Nav from "./Components/nav/Nav";
+import NavBar from "./Components/navbar/NavBar";
 import About from "./Components/about/About";
 import Experience from "./Components/experience/Experience";
 import Services from "./Components/services/Services";
+import Projects from "./Components/projects/Projects";
+import Education from "./Components/education/Education";
 import Contact from "./Components/contact/Contact";
 import Footer from "./Components/footer/Footer";
 
@@ -18,13 +20,15 @@ const App = () => {
 
   return (
     <>
-    <Header />
-    <Nav />
-    <About />
-    <Experience />
-    <Services />
-    <Contact />
-    <Footer />
+<Header/>
+    <NavBar/>
+    <About/>
+    <Education/>
+    <Services/>
+    <Experience/>
+    <Projects/>
+    <Contact/>
+    <Footer/>
     </>
   );
 }

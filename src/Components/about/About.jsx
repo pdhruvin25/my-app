@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "../../me_new.png";
+import ME from "../../NewPhoto.jpg";
 import { FaAward } from "react-icons/fa";
 import {BsFillRocketTakeoffFill} from  "react-icons/bs";
 import {MdArticle} from "react-icons/md";
@@ -8,7 +8,6 @@ import {MdArticle} from "react-icons/md";
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
       <h2>About Me</h2>
       <div className="container about__container">
         <div className="about__me">
@@ -32,13 +31,12 @@ const About = () => {
 
             <article className="about_card">
               <MdArticle className="about__icon" />
-              <h5>Recent Blogs</h5>
-              <small>A World Where AI Meets Medicine</small>
-              <a href = "https://www.racetoacure.org/post/artificial-intelligence-the-future-of-medicine?gclid=Cj0KCQjwoeemBhCfARIsADR2QCs3RBY5LUM8cq7hwwwNOyqmoFUK5_kAgNLTHS63LrLKstWF628F0KsaAvLrEALw_wcB">Blog</a>
+              <h5>Focus Area</h5>
+              <small>Full-Stack Engineering</small>
             </article>
           </div>
           <p>
-            I am a Software Developer with a passion for creating and developing web applications. I have a strong interest in learning new technologies and frameworks. I am a quick learner and a team player. I have a strong background in JavaScript, React, Node, Express, MongoDB, and Python. I am currently looking for an internship/Coop position as a Software Developer.
+            I am a Software Developer with a passion for creating and developing web applications. I have previously completed two rewarding internships as a Full-Stack Software Developer Intern at SOTI and a Software Developer Intern at Ontario Health, where I built scalable cloud infrastructure, optimized data pipelines, and developed secure authentication systems. I am currently seeking full-time Software Engineering positions.
           </p>
           <a href = "#contact" className = "btn btn-primary">Let's Talk</a>
         </div>

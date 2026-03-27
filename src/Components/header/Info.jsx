@@ -1,12 +1,12 @@
 import React from 'react'
-import CV from "../../Resume_New.pdf"
+import CV from "../../Dhruvin_Patel.pdf"
 
 
 const Info = () => {
   return (
     <div className='Info'>
-<a href= {CV} download className='btn'>Download Resume</a>
-<a href= "#contact" className='btn btn-primary'>Lets Talk</a>
+<a href= {CV} className='btn' target = "blank">Open Resume</a>
+<a href= "#contact" className='btn'>Lets Talk</a>
 
     </div>
   )

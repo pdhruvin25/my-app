@@ -1,0 +1,122 @@
+.experience__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.experience__container>div {
+    background: rgba(32, 35, 42, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 2rem;
+    transition: var(--transition1);
+}
+
+.experience__container>div:hover {
+    background: transparent;
+    border-color: var(--primary_colour);
+    cursor: default;
+
+}
+
+.experience__container>div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+.experience__category h3 {
+    color: var(--white);
+    transition: var(--transition1);
+}
+
+.experience__category:hover h3 {
+    color: var(--primary_colour);
+}
+
+
+.experience__category>div h4 {
+    transition: var(--transition1);
+    color: var(--white);
+}
+
+.experience__category:hover h4 {
+
+    color: var(--primary_colour);
+}
+
+
+.experience__category>div small {
+    transition: var(--transition1);
+    color: var(--light_gray);
+}
+
+.experience__category:hover small {
+
+    color: var(--primary_colour);
+}
+
+.experience__category:hover .experience__details-icon {
+    color: var(--primary_colour);
+}
+
+
+.experience__content {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.experience__details {
+    display: flex;
+    text-align: left;
+    gap: 1em;
+}
+
+.experience__details-icon {
+    margin-top: 6px;
+    color: var(--primary_colour_variant);
+}
+
+
+/*Medium Screen*/
+@media screen and (max-width: 1024px) {
+    .experience__container {
+        grid-template-columns: 1fr;
+    }
+
+    .experience__container>div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .experience__content {
+        padding: 1rem;
+    }
+}
+
+/*Small Screen*/
+@media screen and (max-width: 600px) {
+    .about__me {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+
+    .about__cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .about__content {
+        text-align: center;
+    }
+
+    .about__content p {
+        margin: 1.5rem 0;
+    }
+}

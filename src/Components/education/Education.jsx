@@ -1,0 +1,32 @@
+import React from 'react';
+import './education.css';
+import { BsPatchCheckFill } from 'react-icons/bs';
+import UofTLogo from '../../Utoronto_coa.svg.png';
+
+const Education = () => {
+  return (
+    <section id="education">
+      <h2>Education</h2>
+      <div className="container education__container">
+        <article className="education__card">
+          <div className="education__head">
+            <img src={UofTLogo} alt="University of Toronto" className="education__logo" />
+            <div className="education__title">
+              <h3>University of Toronto</h3>
+              <p className="education__date">Sep 2021 – Sep 2026 | Toronto, Canada</p>
+              <p className="education__degree">Bachelor of Computer Science: Specialization in Software Engineering</p>
+            </div>
+          </div>
+          <ul className="education__list">
+            <li>
+              <BsPatchCheckFill className="education__list-icon" />
+              <p><b>Relevant Coursework:</b> Computer & Network Security, Database Systems, Software Systems, Software Design and Architecture, Object-Oriented Analysis and Design</p>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  );
+};
+
+export default Education;

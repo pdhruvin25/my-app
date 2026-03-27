@@ -1,10 +1,10 @@
-.services__container {
+.projects__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
 }
 
-.service {
+.project {
     background: rgba(32, 35, 42, 0.85);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -14,40 +14,27 @@
     transition: var(--transition1);
 }
 
-.service:hover  {
-
+.project:hover {
     background: transparent;
     cursor: default;
-
 }
 
-.service:hover  .service__head h3{
-
-    color:var(--white);
-
+.project:hover .project__head h3,
+.project:hover .project__list p,
+.project:hover .project__tech,
+.project:hover .project__date {
+    color: var(--white);
 }
 
-.service:hover  .service__list p{
-
-    color:var(--white);
-
-}
-
-
-
-
-
-.service__head {
+.project__head {
     background: transparent;
     padding: 2rem;
     border-radius: 2rem 2rem 2rem 2rem;
     transition: var(--transition1);
-    color: var(--white)
+    color: var(--white);
 }
 
-.service__head h3 {
-    /* background: var(--background_colour); */
-    /* background: var(--background_colour_variant); */
+.project__head h3 {
     transition: var(--transition1);
     border-radius: 2rem 2rem 2rem 2rem;
     padding: 0.6rem;
@@ -55,56 +42,59 @@
     text-align: center;
 }
 
-.service__date {
+.project__date {
     text-align: center;
     font-size: 0.8rem;
     padding-bottom: 0.6rem;
     transition: var(--transition1);
 }
 
-.service:hover .service__date {
+.project__tech {
+    text-align: center;
+    font-size: 0.85rem;
+    font-style: italic;
+    padding-bottom: 0.6rem;
+    transition: var(--transition1);
     color: var(--white);
 }
 
-.service__list {
+.project__list {
     padding: 2rem;
     transition: var(--transition1);
 }
 
-.service__list li {
+.project__list li {
     display: flex;
     gap: 1rem;
     margin-bottom: 0.8rem;
 }
 
-.service__list-icon {
+.project__list-icon {
     color: var(--background_colour_variant);
     margin-top: 5px;
     width: 3rem;
 }
 
-.service__list p {
+.project__list p {
     font-size: 0.9rem;
-color: var(--white);
-transition: var(--transition1);
-
+    color: var(--white);
+    transition: var(--transition1);
 }
 
 /*Medium Screen*/
 @media screen and (max-width: 1024px) {
-    .services__container {
+    .projects__container {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
-
-    .service {
+    .project {
         height: auto;
     }
 }
 
 /*Small Screen*/
 @media screen and (max-width: 600px) {
-    .services__container {
+    .projects__container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
