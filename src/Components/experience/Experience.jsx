@@ -6,106 +6,52 @@ import { BsCheck2Circle } from "react-icons/bs";
 const Experience = () => {
   return (
     <section id="experience">
-    <h5>What Skills Do I Have</h5>
-    <h2>My Experience</h2>
-    <div className="container experience__container">
-      <div className="experience__frontend">
-        <h3>Front-End Development</h3>
-        <div className="experience__content">
-          <article className="experience__details">
-            <BsCheck2Circle className = "experience__details-icon" />
-            <div >
-              <h4>HTML5</h4>
-              <small className="text-light">Expert</small>
-            </div>
-          </article>
-          <article className="experience__details">
-          <BsCheck2Circle className = "experience__details-icon" />
-            <div >
-              <h4>JavaScript</h4>
-              <small className="text-light">Expert</small>
-            </div>
-          </article>
-          <article className="experience__details">
-          <BsCheck2Circle className = "experience__details-icon" />
-            <div >
-              <h4>React</h4>
-              <small className="text-light">Expert</small>
-            </div>
-          </article>
-          <article className="experience__details">
-          <BsCheck2Circle className = "experience__details-icon" />
-            <div className="experience__info">
-              <h4>Python</h4>
-              <small className="text-light">Expert</small>
-            </div>
-          </article>
-          <article className="experience__details">
-          <BsCheck2Circle className = "experience__details-icon" />
-            <div >
-              <h4>Java</h4>
-              <small className="text-light">Expert</small>
-            </div>
-          </article>
-          <article className="experience__details">
-          <BsCheck2Circle className = "experience__details-icon" />
-            <div >
-              <h4>Solidity</h4>
-              <small className="text-light">Learning</small>
-            </div>
-          </article>
+      <h5>What Skills Do I Have</h5>
+      <h2>My Skills</h2>
+      <div className="container experience__container">
+        <div className="experience__category">
+          <h3>Languages</h3>
+          <div className="experience__content">
+            {['Python', 'Java', 'C', 'C++', 'C#', 'PHP', 'Javascript', 'Typescript'].map((skill) => (
+              <article className="experience__details" key={skill}>
+                <BsCheck2Circle className="experience__details-icon" />
+                <div>
+                  <h4>{skill}</h4>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="experience__backend">
-        <h3>Back-End Development</h3>
-        <div className="experience__content">
-          <article className="experience__details">
-          <BsCheck2Circle className = "experience__details-icon" />
-            <div>
-              <h4>Python</h4>
-              <small className="text-light">Expert</small>
-            </div>
-          </article>
-          <article className="experience__details">
-          <BsCheck2Circle className = "experience__details-icon" />
-            <div>
-              <h4>Node.js</h4>
-              <small className="text-light">Learning</small>
-            </div>
-          </article>
-          <article className="experience__details">
-          <BsCheck2Circle className = "experience__details-icon" />
-            <div>
-              <h4>JavaScript</h4>
-              <small className="text-light">Expert</small>
-            </div>
-          </article>
-          <article className="experience__details">
-          <BsCheck2Circle className = "experience__details-icon" />
-            <div >
-              <h4>SQL</h4>
-              <small className="text-light">Intermediate</small>
-            </div>
-          </article>
-          <article className="experience__details">
-          <BsCheck2Circle className = "experience__details-icon" />
-            <div>
-              <h4>Java</h4>
-              <small className="text-light">Expert</small>
-            </div>
-          </article>
-          <article className="experience__details">
-          <BsCheck2Circle className = "experience__details-icon" />
-            <div >
-              <h4>MongoDB</h4>
-              <small className="text-light">Intermediate</small>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
 
+        <div className="experience__category">
+          <h3>Frameworks</h3>
+          <div className="experience__content">
+            {['.NET Core', 'React.js', 'Node.js', 'Express.js', 'Angular', 'Docker', 'PostgreSQL', 'MSSQL', 'MongoDB', 'Jenkins', 'Pandas', 'NumPy', 'Scikit-learn'].map((skill) => (
+              <article className="experience__details" key={skill}>
+                <BsCheck2Circle className="experience__details-icon" />
+                <div>
+                  <h4>{skill}</h4>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div className="experience__category">
+          <h3>Developer Tools</h3>
+          <div className="experience__content">
+            {['Android Studio', 'Matlab', 'Git', 'Jira', 'Linux/Unix', 'Tableau', 'AWS', 'Azure', 'CI/CD'].map((skill) => (
+              <article className="experience__details" key={skill}>
+                <BsCheck2Circle className="experience__details-icon" />
+                <div>
+                  <h4>{skill}</h4>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 

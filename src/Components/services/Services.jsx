@@ -5,87 +5,59 @@ import { BsPatchCheckFill } from "react-icons/bs";
 const Services = () => {
   return (
     <section id="services">
-      <h5>What I Offer</h5>
-      <h2>Services</h2>
+      <h5>My Career</h5>
+      <h2>Experience</h2>
       <div className="container services__container">
         <article className="service">
           <div className="service__head">
-            <h3>Web and Mobile Application Development</h3>
+            <h3>Full-Stack Software Developer Intern - SOTI</h3>
+            <p className="service__date">Jan 2025 – Dec 2026 | Mississauga, Canada</p>
           </div>
           <ul className="service__list">
             <li>
               <BsPatchCheckFill className="service__list-icon" />
-              <p>Create responsive apps that offer seamless experiences across devices</p>
+              <p>Collaborated on installer wizard enhancements to support file streaming over local file DB instead of cloud storage, delivering a saving $1 Million+ in cloud infrastructure expenses.</p>
             </li>
             <li>
               <BsPatchCheckFill className="service__list-icon" />
-              <p>Utilize the latest frameworks for innovative and secure app development</p>
+              <p>Implemented LDAP authentication using .NET Core and Angular, securing access for 80% of platform users by automating the removal of invalid connections.</p>
             </li>
             <li>
               <BsPatchCheckFill className="service__list-icon" />
-              <p>Develop custom apps aligned with your unique business needs.</p>
+              <p>Engineered frontend for webhooks client credentials for OAuth2.0 used by 17,000+ global customers.</p>
             </li>
             <li>
               <BsPatchCheckFill className="service__list-icon" />
-              <p>Build apps that work smoothly on iOS, Android, and the web</p>
+              <p>Increased test coverage from 10% to 85% by developing 20+ BDD scenarios in SpecFlow, significantly reducing regression bugs in production.</p>
             </li>
             <li>
               <BsPatchCheckFill className="service__list-icon" />
-              <p>Manage the entire app development process from concept to deployment</p>
+              <p>Resolved critical bugs in Deployment Service and Management Service backend infrastructure to improve system stability and service reliability.</p>
             </li>
           </ul>
         </article>
+        
         <article className="service">
           <div className="service__head">
-            <h3>UI/UX</h3>
+            <h3>Software Developer Intern - Ontario Health</h3>
+            <p className="service__date">May 2024 – Aug 2024 | Toronto, Canada</p>
           </div>
           <ul className="service__list">
-          <li>
+            <li>
               <BsPatchCheckFill className="service__list-icon" />
-              <p> Craft user-friendly interfaces for effortless navigation</p>
+              <p>Supported DCIS and Corhealth Ontario applications by conducting root-cause analysis to resolve bugs resulting in optimized performance and reliability for ETL pipeline.</p>
             </li>
             <li>
               <BsPatchCheckFill className="service__list-icon" />
-              <p>Create stunning visuals that captivate and engage users</p>
+              <p>Developed cloud-hosted solutions with privacy and security standards, maintaining 100% compliance.</p>
             </li>
             <li>
               <BsPatchCheckFill className="service__list-icon" />
-              <p>Develop smooth interactions for enhanced user experiences</p>
+              <p>Led code reviews during deployment, reducing production errors by 25%.</p>
             </li>
             <li>
               <BsPatchCheckFill className="service__list-icon" />
-              <p>Ensure designs adapt seamlessly across devices and platforms</p>
-            </li>
-            <li>
-              <BsPatchCheckFill className="service__list-icon" />
-              <p>Design with users in mind, focusing on their needs and preferences</p>
-            </li>
-          </ul>
-        </article>
-        <article className="service">
-          <div className="service__head">
-            <h3>Custom Software Development</h3>
-          </div>
-          <ul className="service__list">
-          <li>
-              <BsPatchCheckFill className="service__list-icon" />
-              <p>Develop unique software to meet your unique business needs</p>
-            </li>
-            <li>
-              <BsPatchCheckFill className="service__list-icon" />
-              <p>Streamline processes and workflows with custom-built applications</p>
-            </li>
-            <li>
-              <BsPatchCheckFill className="service__list-icon" />
-              <p>Build software that grows alongside your business demands</p>
-            </li>
-            <li>
-              <BsPatchCheckFill className="service__list-icon" />
-              <p>Integrate specialized features for enhanced performance</p>
-            </li>
-            <li>
-              <BsPatchCheckFill className="service__list-icon" />
-              <p> Leverage my technical proficiency to create cutting-edge software solutions</p>
+              <p>Revamped user interface based on stakeholder requirements, reducing user support tickets by improving workflow efficiency.</p>
             </li>
           </ul>
         </article>

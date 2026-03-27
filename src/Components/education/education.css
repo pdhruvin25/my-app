@@ -1,0 +1,93 @@
+.education__container {
+    display: flex;
+    justify-content: center;
+}
+
+.education__card {
+    background: var(--primary_colour);
+    border-radius: 2rem 2rem 2rem 2rem;
+    border: 1px solid var(--primary_colour);
+    width: 60%;
+    transition: var(--transition1);
+}
+
+.education__card:hover {
+    background: transparent;
+    cursor: default;
+}
+
+.education__card:hover .education__head h3,
+.education__card:hover .education__list p,
+.education__card:hover .education__date,
+.education__card:hover .education__degree {
+    color: var(--white);
+}
+
+.education__head {
+    background: transparent;
+    padding: 2rem;
+    border-radius: 2rem 2rem 2rem 2rem;
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+    transition: var(--transition1);
+    color: var(--background_colour);
+}
+
+.education__head h3 {
+    transition: var(--transition1);
+    border-radius: 2rem 2rem 2rem 2rem;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.education__date {
+    text-align: center;
+    font-size: 0.9rem;
+    padding-bottom: 0.6rem;
+    transition: var(--transition1);
+}
+
+.education__degree {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 0.6rem;
+    transition: var(--transition1);
+}
+
+.education__list {
+    padding: 2rem;
+    transition: var(--transition1);
+}
+
+.education__list li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.education__list-icon {
+    color: var(--background_colour_variant);
+    margin-top: 5px;
+    width: 3rem;
+}
+
+.education__list p {
+    font-size: 0.9rem;
+    color: var(--background_colour);
+    transition: var(--transition1);
+}
+
+/*Medium Screen*/
+@media screen and (max-width: 1024px) {
+    .education__card {
+        width: 80%;
+    }
+}
+
+/*Small Screen*/
+@media screen and (max-width: 600px) {
+    .education__card {
+        width: 100%;
+    }
+}
