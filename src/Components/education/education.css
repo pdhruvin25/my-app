@@ -24,12 +24,21 @@
 }
 
 .education__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
     background: transparent;
     padding: 2rem;
-    border-radius: 2rem 2rem 2rem 2rem;
+    border-radius: 2rem;
     box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
     transition: var(--transition1);
     color: var(--background_colour);
+}
+
+.education__logo {
+    width: 6rem;
+    height: auto;
 }
 
 .education__head h3 {

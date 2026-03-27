@@ -1,7 +1,6 @@
 import React from "react";
 import "./header.css";
 import Info from "./Info";
-import ME from "../../NewPhoto.jpg";
 import HeaderSocials from "./HeaderSocials";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
@@ -14,9 +13,7 @@ const Header = () => {
         <h5 className="text-light">Software Developer</h5>
         <Info />
         <HeaderSocials />
-        <div className="me">
-          <img src={ME} alt="me" />
-        </div>
+        
         <a href="#contact" className="scroll__down">
           Scroll Down <AiOutlineArrowRight/>
         </a>

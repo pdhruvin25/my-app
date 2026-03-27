@@ -22,13 +22,13 @@ text-decoration: none;
 --white: #FFFFFF;*/
 
 
---background_colour:#0a192f;
---background_colour_variant:#112240;
---primary_colour:#64ffda;
---primary_colour_variant:#00b386;
---light_gray:#8892b0;
+--background_colour:#231F20;
+--background_colour_variant:#91805b;
+--primary_colour:#EDE4D6;
+--primary_colour_variant:#F4F4F4;
+--light_gray:#F4F4F4;
 
---white: #ccd6f6;
+--white: #EDE4D6;
 
 --container_width_large: 75%;
 --container_width_medium:86%;
@@ -43,6 +43,7 @@ body{
   background: var(--background_colour);
   color: var(--white);
   line-height: 1.7;
+  background-image: url(../src/topography.png);
 }
 
 html{

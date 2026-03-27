@@ -1,6 +1,7 @@
 import React from 'react';
 import './education.css';
 import { BsPatchCheckFill } from 'react-icons/bs';
+import UofTLogo from '../../Utoronto_coa.svg.png';
 
 const Education = () => {
   return (
@@ -10,9 +11,12 @@ const Education = () => {
       <div className="container education__container">
         <article className="education__card">
           <div className="education__head">
-            <h3>University of Toronto</h3>
-            <p className="education__date">Sep 2021 – Sep 2026 | Toronto, Canada</p>
-            <p className="education__degree">Bachelor of Computer Science: Specialization in Software Engineering</p>
+            <img src={UofTLogo} alt="University of Toronto" className="education__logo" />
+            <div className="education__title">
+              <h3>University of Toronto</h3>
+              <p className="education__date">Sep 2021 – Sep 2026 | Toronto, Canada</p>
+              <p className="education__degree">Bachelor of Computer Science: Specialization in Software Engineering</p>
+            </div>
           </div>
           <ul className="education__list">
             <li>
