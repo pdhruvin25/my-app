@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.b165e201.css",
+    "main.css": "/my-app/static/css/main.bfc62f90.css",
     "main.js": "/my-app/static/js/main.df64831c.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/Utoronto_coa.svg.png": "/my-app/static/media/Utoronto_coa.svg.8d14e58cbadf14d954eb.png",
     "static/media/Dhruvin_Patel.pdf": "/my-app/static/media/Dhruvin_Patel.6e7243ffdf4cc51fb671.pdf",
     "static/media/NewPhoto.jpg": "/my-app/static/media/NewPhoto.c21cc648fdce661f2f3d.jpg",
     "index.html": "/my-app/index.html",
-    "main.b165e201.css.map": "/my-app/static/css/main.b165e201.css.map",
+    "main.bfc62f90.css.map": "/my-app/static/css/main.bfc62f90.css.map",
     "main.df64831c.js.map": "/my-app/static/js/main.df64831c.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b165e201.css",
+    "static/css/main.bfc62f90.css",
     "static/js/main.df64831c.js"
   ]
 }
