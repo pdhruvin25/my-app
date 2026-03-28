@@ -82,6 +82,23 @@
     transition: var(--transition1);
 }
 
+.carousel__navigation {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.carousel__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 /*Medium Screen*/
 @media screen and (max-width: 1024px) {
     .projects__container {
