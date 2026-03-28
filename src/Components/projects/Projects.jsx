@@ -47,13 +47,14 @@ const projectsData = [
     ]
   },
   {
-    title: 'Packet Sniffer | Network Traffic Analyzer',
+    title: 'NetFlow Probe | Advanced Packet Sniffer',
     date: 'Jan 2024 – Apr 2024',
     tech: 'Python, Scapy, Multi-threading, Networking, CLI',
     bullets: [
-      "Engineered a lightweight, interactive command-line Packet Sniffer leveraging the Scapy library to monitor real-time network traffic, analyze protocols, and track request-response latencies.",
-      "Architected a robust multi-threaded execution model separating asynchronous packet capture operations from user inputs, ensuring zero-blocking concurrent execution.",
-      "Implemented dynamic BPF-style syntax filtering and integrated the Rich library to compute and visualize complex protocol statistics and data logs in real-time."
+      "Engineered an asynchronous, interactive command-line Packet Sniffer leveraging the Scapy library to intercept, analyze, and log real-time network traffic across complex protocols (TCP, UDP, ICMP).",
+      "Architected a robust multi-threaded execution model, strictly decoupling low-level packet capture workloads from user-input handling to guarantee zero-blocking concurrent execution during active network monitoring.",
+      "Developed a dynamic Berkeley Packet Filter (BPF) syntax engine, allowing users to apply custom, real-time filtering rules based on source IP, destination IP, or specific network protocols.",
+      "Integrated the Rich Python library to compute and visualize comprehensive protocol statistics, packet payload sizes, and request-response latencies through dynamic, text-based console dashboards."
     ]
   },
   {
