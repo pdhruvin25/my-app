@@ -109,4 +109,8 @@ transition: var(--transition1);
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
+    .service {
+        background: transparent;
+        border-color: var(--primary_colour_variant);
+    }
 }

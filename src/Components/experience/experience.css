@@ -11,13 +11,13 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
     padding: 1.5rem;
-    border-radius: 2rem;
+    border-radius: 0 0 2rem 2rem;
     transition: var(--transition1);
 }
 
 .experience__container>div:hover {
     background: transparent;
-    border-color: var(--primary_colour);
+    border-color: var(--primary_colour_variant);
     cursor: default;
 
 }
@@ -110,5 +110,7 @@
     .experience__container > div {
         width: 100%;
         padding: 2rem 1rem;
+        background: transparent;
+        border-color: var(--primary_colour_variant);
     }
 }

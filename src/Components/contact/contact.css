@@ -89,6 +89,10 @@ textarea {
   .container.contact__container {
     width: var(--container_width_small);
   }
+  .contact__option {
+    background: transparent;
+    border-color: var(--primary_colour_variant);
+  }
 }
 
 /* Define the animation */

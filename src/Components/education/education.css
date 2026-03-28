@@ -9,7 +9,7 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 2rem 2rem 2rem 2rem;
+    border-radius: 0 0 2rem 2rem;
     width: 60%;
     transition: var(--transition1);
 }
@@ -100,5 +100,7 @@
 @media screen and (max-width: 600px) {
     .education__card {
         width: 100%;
+        background: transparent;
+        border-color: var(--primary_colour_variant);
     }
 }

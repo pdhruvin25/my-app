@@ -38,7 +38,7 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 1rem;
+    border-radius: 0 0 1rem 1rem;
     padding: 2rem;
     text-align: center;
     transition: var(--transition1);
@@ -74,7 +74,7 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 1rem;
+    border-radius: 0 0 1rem 1rem;
     padding: 2rem;
 }
 
@@ -108,11 +108,18 @@
         gap: 1rem;
     }
 
+    .about__card {
+        background: transparent;
+        border-color: var(--primary_colour_variant);
+    }
+
     .about__content {
         text-align: center;
     }
 
     .about__content p {
         margin: 1.5rem 0;
+        background: transparent;
+        border-color: var(--primary_colour_variant);
     }
 }
