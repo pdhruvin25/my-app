@@ -102,21 +102,12 @@
 
 /*Small Screen*/
 @media screen and (max-width: 600px) {
-    .about__me {
-        width: 65%;
-        margin: 0 auto 3rem;
-    }
-
-    .about__cards {
-        grid-template-columns: 1fr 1fr;
+    .experience__container {
         gap: 1rem;
     }
 
-    .about__content {
-        text-align: center;
-    }
-
-    .about__content p {
-        margin: 1.5rem 0;
+    .experience__container > div {
+        width: 100%;
+        padding: 2rem 1rem;
     }
 }

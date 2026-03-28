@@ -97,13 +97,14 @@
 
 /*Small Screen*/
 @media screen and (max-width: 600px) {
-    .experience__container {
-        gap: 1rem;
+    .about__me {
+        width: 65%;
+        margin: 0 auto 3rem;
     }
 
-    .experience__container > div {
-        width: 100%;
-padding: 2rem 1rem;
+    .about__cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
 
     .about__content {
