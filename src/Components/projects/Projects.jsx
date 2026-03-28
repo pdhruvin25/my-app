@@ -47,14 +47,23 @@ const projectsData = [
     ]
   },
   {
-    title: 'Packet Sniffer | Interactive Network Monitor',
+    title: 'Packet Sniffer | Network Traffic Analyzer',
     date: 'Jan 2024 – Apr 2024',
-    tech: 'Python, Scapy, Multi-threading, BPF, CLI (Rich)',
+    tech: 'Python, Scapy, Multi-threading, Networking, CLI',
     bullets: [
-      "Engineered a lightweight, interactive command-line packet sniffer using Python and Scapy to capture, monitor, and analyze real-time network traffic patterns and protocol usage (TCP, UDP, ICMP).",
-      "Designed and implemented a multi-threaded architecture to decouple packet capturing from user input, enabling real-time terminal controls (pause, resume) without blocking the main execution flow.",
-      "Integrated dynamic Berkeley Packet Filter (BPF) syntax support, allowing for highly customizable live filtration of network packets based on custom source IPs, destination IPs, and specific ports.",
-      "Developed rich-text terminal visualizations and logging utilities using the Rich library to display real-time protocol statistics and track tracking request-response latencies."
+      "Engineered a lightweight, interactive command-line Packet Sniffer leveraging the Scapy library to monitor real-time network traffic, analyze protocols, and track request-response latencies.",
+      "Architected a robust multi-threaded execution model separating asynchronous packet capture operations from user inputs, ensuring zero-blocking concurrent execution.",
+      "Implemented dynamic BPF-style syntax filtering and integrated the Rich library to compute and visualize complex protocol statistics and data logs in real-time."
+    ]
+  },
+  {
+    title: 'The Ghost of Manz | MIPS Assembly Game',
+    date: 'Jan 2022 – Apr 2022',
+    tech: 'MIPS Assembly, Low-Level Programming, Computer Architecture',
+    bullets: [
+      "Developed an immersive, real-time puzzle game built entirely from scratch in MIPS Assembly language.",
+      "Engineered low-level hardware interactions, memory management, and real-time enemy rendering mechanics without relying on modern game engines.",
+      <React.Fragment>Demonstrated deep proficiency in computer architecture by optimizing CPU cycles to maintain glitch-free, real-time gameplay (<a href="https://www.youtube.com/watch?v=w93fJ3kxfTM" target="_blank" rel="noreferrer" style={{color: "var(--primary_colour)", textDecoration: "underline"}}>Video Demo</a>).</React.Fragment>
     ]
   }
 ];
