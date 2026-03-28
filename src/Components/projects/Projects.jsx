@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './projects.css';
-import { BsPatchCheckFill, BsChevronLeft, BsChevronRight } from 'react-icons/bs';
+import { BsPatchCheckFill } from 'react-icons/bs';
 
 const projectsData = [
   {
@@ -49,18 +49,14 @@ const projectsData = [
 ];
 
 const Projects = () => {
-  const [page, setPage] = useState(0);
-  const maxPage = Math.ceil(projectsData.length / 2) - 1;
-
   return (
     <section id="projects">
       <h2>Projects</h2>
       
       <div className="container projects__container">
         {projectsData.map((project, index) => {
-          const isVisible = index >= page * 2 && index < page * 2 + 2;
           return (
-            <article key={index} className={`project ${isVisible ? 'active-project' : 'hidden-project'}`}>
+            <article key={index} className="project">
               <div className="project__head">
                 <h3>{project.title}</h3>
                 <p className="project__date">{project.date}</p>
@@ -77,24 +73,6 @@ const Projects = () => {
             </article>
           );
         })}
-      </div>
-
-      <div className="carousel-controls">
-        <button 
-          className="carousel-arrow" 
-          onClick={() => setPage(page - 1)}
-          style={{ visibility: page === 0 ? 'hidden' : 'visible' }}
-        >
-          <BsChevronLeft />
-        </button>
-
-        <button 
-          className="carousel-arrow" 
-          onClick={() => setPage(page + 1)}
-          style={{ visibility: page >= maxPage ? 'hidden' : 'visible' }}
-        >
-          <BsChevronRight />
-        </button>
       </div>
     </section>
   );
