@@ -45,6 +45,17 @@ const projectsData = [
       "Designed natural language query parsers and arXiv ID exact-match tooling entirely in TypeScript, massively enhancing research automation tooling for AI agents.",
       "Implemented dynamic PDF parsing, abstract summarization, and customizable metadata pagination, enabling developers to easily fine-tune vector search retrieval parameters."
     ]
+  },
+  {
+    title: 'Packet Sniffer | Interactive Network Monitor',
+    date: 'Jan 2024 – Apr 2024',
+    tech: 'Python, Scapy, Multi-threading, BPF, CLI (Rich)',
+    bullets: [
+      "Engineered a lightweight, interactive command-line packet sniffer using Python and Scapy to capture, monitor, and analyze real-time network traffic patterns and protocol usage (TCP, UDP, ICMP).",
+      "Designed and implemented a multi-threaded architecture to decouple packet capturing from user input, enabling real-time terminal controls (pause, resume) without blocking the main execution flow.",
+      "Integrated dynamic Berkeley Packet Filter (BPF) syntax support, allowing for highly customizable live filtration of network packets based on custom source IPs, destination IPs, and specific ports.",
+      "Developed rich-text terminal visualizations and logging utilities using the Rich library to display real-time protocol statistics and track tracking request-response latencies."
+    ]
   }
 ];
 
