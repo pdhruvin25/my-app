@@ -56,7 +56,30 @@ const Projects = () => {
     <section id="projects">
       <h2>Projects</h2>
       
-      <div className="carousel-wrapper">
+      <div className="container projects__container">
+        {projectsData.map((project, index) => {
+          const isVisible = index >= page * 2 && index < page * 2 + 2;
+          return (
+            <article key={index} className={`project ${isVisible ? 'active-project' : 'hidden-project'}`}>
+              <div className="project__head">
+                <h3>{project.title}</h3>
+                <p className="project__date">{project.date}</p>
+                <p className="project__tech">{project.tech}</p>
+              </div>
+              <ul className="project__list">
+                {project.bullets.map((bullet, i) => (
+                  <li key={i}>
+                    <BsPatchCheckFill className="project__list-icon" />
+                    <p>{bullet}</p>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          );
+        })}
+      </div>
+
+      <div className="carousel-controls">
         <button 
           className="carousel-arrow" 
           onClick={() => setPage(page - 1)}
@@ -64,29 +87,6 @@ const Projects = () => {
         >
           <BsChevronLeft />
         </button>
-
-        <div className="container projects__container">
-          {projectsData.map((project, index) => {
-            const isVisible = index >= page * 2 && index < page * 2 + 2;
-            return (
-              <article key={index} className={`project ${isVisible ? 'active-project' : 'hidden-project'}`}>
-                <div className="project__head">
-                  <h3>{project.title}</h3>
-                  <p className="project__date">{project.date}</p>
-                  <p className="project__tech">{project.tech}</p>
-                </div>
-                <ul className="project__list">
-                  {project.bullets.map((bullet, i) => (
-                    <li key={i}>
-                      <BsPatchCheckFill className="project__list-icon" />
-                      <p>{bullet}</p>
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            );
-          })}
-        </div>
 
         <button 
           className="carousel-arrow" 

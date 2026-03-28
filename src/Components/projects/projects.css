@@ -4,12 +4,12 @@
     gap: 1rem;
 }
 
-.carousel-wrapper {
+.carousel-controls {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
 .carousel-arrow {
@@ -138,10 +138,7 @@
         background: transparent;
         border-color: var(--primary_colour_variant);
     }
-    .carousel-wrapper {
-        display: block;
-    }
-    .carousel-arrow {
+    .carousel-controls {
         display: none !important;
     }
     .hidden-project {
