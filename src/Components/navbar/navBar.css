@@ -38,9 +38,12 @@ color: var(--background_colour);
     nav {
         padding: 0.5rem 1rem;
         gap: 0.5rem;
+        background: rgba(32, 35, 42, 0.85); /* Heavier frosted glass for mobile */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
     }
     nav a {
-        padding: 0.6rem;
-        font-size: 0.9rem;
+        padding: 0.7rem;
+        font-size: 1rem;
     }
 }
