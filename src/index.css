@@ -38,6 +38,12 @@
 
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--white);
+  line-height: 1.7;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -45,14 +51,8 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to bottom, var(--background_colour_variant), #ffffff);
   z-index: -1;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  color: var(--white);
-  line-height: 1.7;
+  background: linear-gradient(to bottom, var(--background_colour_variant), #ffffff);
 }
 
 html {

@@ -11,6 +11,7 @@ bottom: 2rem;
 display: flex;
 gap: 0.8rem;
 border-radius:3rem;
+-webkit-backdrop-filter: blur(15px);
 backdrop-filter: blur(15px);
 }
 
@@ -36,14 +37,11 @@ color: var(--background_colour);
 /*Small Screen*/
 @media screen and (max-width: 600px) {
     nav {
-        padding: 0.5rem 1rem;
-        gap: 0.5rem;
-        background: rgba(32, 35, 42, 0.85); /* Heavier frosted glass for mobile */
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        padding: 0.4rem 1.0rem;
+        gap: 0.4rem;
     }
     nav a {
-        padding: 0.7rem;
-        font-size: 1rem;
+        padding: 0.6rem;
+        font-size: 0.95rem;
     }
 }
