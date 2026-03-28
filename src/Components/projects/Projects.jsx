@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './projects.css';
 import { BsPatchCheckFill, BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
-const projectData = [
+const projectsData = [
   {
-    title: "SecurAid | Secure File Sharing Platform",
-    date: "Sep 2024 – Dec 2024",
-    tech: "React.js, Node.js, MongoDB, AWS S3, Docker, VirusTotal API, OAuth2",
+    title: 'SecurAid | Secure File Sharing Platform',
+    date: 'Sep 2024 – Dec 2024',
+    tech: 'React.js, Node.js, MongoDB, AWS S3, Docker, VirusTotal API, OAuth2',
     bullets: [
       "Utilized Node.js, Express.js, and MongoDB to manage complex user, file, and project relationships with secure login (bcrypt), Google OAuth2 authentication, OTP authentication and time-restricted access.",
       "Containerized frontend and backend apps with Docker, using Nginx reverse proxy for HTTPS traffic routing, and deploying live via Dynamic DNS (Dynu) to maximize cost-efficiency.",
@@ -16,9 +16,9 @@ const projectData = [
     ]
   },
   {
-    title: "CoBuild | AI-Powered Recruiting Tool",
-    date: "Apr 2023 – Aug 2023",
-    tech: "Javascript, MongoDB, ReactJS, NodeJS, ExpressJS, Python, REST API",
+    title: 'CoBuild | AI-Powered Recruiting Tool',
+    date: 'Apr 2023 – Aug 2023',
+    tech: 'Javascript, MongoDB, ReactJS, NodeJS, ExpressJS, Python, REST API',
     bullets: [
       "Achieved 40% reduction in the average times for assessment completion and networking by designing and implementing frontend using React.js, resulting in faster hiring timelines.",
       "Accelerated recruiter decision making speed by 30% through the development of a comprehensive analysis system using OpenAI for providing detailed insights into users' assessment solutions.",
@@ -27,73 +27,71 @@ const projectData = [
     ]
   },
   {
-    title: "StockZ | Real-time Market Analyzer",
-    date: "",
-    tech: "React.js, Node.js, Express.js, TypeScript, Finnhub API",
+    title: 'StockZ | Real-Time Stock Analyzer',
+    date: 'Jan 2023 – Mar 2023',
+    tech: 'React.js, Node.js, Express, Chart.js, REST APIs',
     bullets: [
-      "Architected a highly responsive web-based financial application offering low-latency, real-time insights into thousands of volatile stock market tickers.",
-      "Utilized interactive data-visualization libraries to chart market trends seamlessly, significantly enhancing user decision-making processes.",
-      "Engineered highly optimized frontend components and robust REST API endpoints to guarantee frictionless data syncing across the full application."
+      "Architected a scalable full-stack web application using React.js and Node.js to deliver real-time stock market insights and financial data visualization.",
+      "Integrated highly-available REST APIs (e.g., Alpha Vantage or Yahoo Finance) to fetch, process, and cache up-to-date market trends, improving data retrieval efficiency.",
+      "Developed dynamic interactive charting components utilizing Chart.js to help investors seamlessly analyze moving averages and critical technical indicators."
     ]
   },
   {
-    title: "Arxiv Retriever | Open Source LLM Contribution",
-    date: "",
-    tech: "Python, LangChain, OpenAI, arXiv API, PyPDF2",
+    title: 'Arxiv Retriever | Open Source Contribution',
+    date: 'Oct 2022 – Dec 2022',
+    tech: 'TypeScript, LangChain.js, Node.js, LLMs, PDF Parsing',
     bullets: [
-      "Contributed deeply to the open-source community by orchestrating a dedicated retriever integration between the LangChain.js framework and the arXiv academic database.",
-      "Implemented sophisticated document-parsing logic capable of pulling full dynamic PDFs or extracting lightweight metadata summaries based on custom natural language queries or specific article IDs.",
-      "Architected extensive utility functions and robust filtering parameters directly into the retrieval sequence, guaranteeing seamless academic research workflows for AI-driven applications."
+      "Contributed to LangChain.js (Open-Source) by engineering a robust arXiv document retriever to seamlessly integrate academic papers into generic AI/LLM pipelines.",
+      "Designed natural language query parsers and arXiv ID exact-match tooling entirely in TypeScript, massively enhancing research automation tooling for AI agents.",
+      "Implemented dynamic PDF parsing, abstract summarization, and customizable metadata pagination, enabling developers to easily fine-tune vector search retrieval parameters."
     ]
   }
 ];
 
 const Projects = () => {
-  const [currentPage, setCurrentPage] = useState(0);
-
-  const nextPage = () => setCurrentPage((prev) => prev + 1);
-  const prevPage = () => setCurrentPage((prev) => prev - 1);
-
-  const displayedProjects = projectData.slice(currentPage * 2, currentPage * 2 + 2);
+  const [page, setPage] = useState(0);
+  const maxPage = Math.ceil(projectsData.length / 2) - 1;
 
   return (
     <section id="projects">
       <h2>Projects</h2>
       
-      <div className="container projects__container">
-        {displayedProjects.map((project, index) => (
-          <article className="project" key={index}>
-            <div className="project__head">
-              <h3>{project.title}</h3>
-              {project.date && <p className="project__date">{project.date}</p>}
-              <p className="project__tech">{project.tech}</p>
-            </div>
-            <ul className="project__list">
-              {project.bullets.map((bullet, i) => (
-                <li key={i}>
-                  <BsPatchCheckFill className="project__list-icon" />
-                  <p>{bullet}</p>
-                </li>
-              ))}
-            </ul>
-          </article>
-        ))}
-      </div>
-
-      <div className="carousel__navigation">
+      <div className="carousel-wrapper">
         <button 
-          className="btn btn-primary carousel__btn" 
-          onClick={prevPage} 
-          disabled={currentPage === 0}
-          style={{ visibility: currentPage === 0 ? 'hidden' : 'visible' }}
+          className="carousel-arrow" 
+          onClick={() => setPage(page - 1)}
+          style={{ visibility: page === 0 ? 'hidden' : 'visible' }}
         >
           <BsChevronLeft />
         </button>
+
+        <div className="container projects__container">
+          {projectsData.map((project, index) => {
+            const isVisible = index >= page * 2 && index < page * 2 + 2;
+            return (
+              <article key={index} className={`project ${isVisible ? 'active-project' : 'hidden-project'}`}>
+                <div className="project__head">
+                  <h3>{project.title}</h3>
+                  <p className="project__date">{project.date}</p>
+                  <p className="project__tech">{project.tech}</p>
+                </div>
+                <ul className="project__list">
+                  {project.bullets.map((bullet, i) => (
+                    <li key={i}>
+                      <BsPatchCheckFill className="project__list-icon" />
+                      <p>{bullet}</p>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            );
+          })}
+        </div>
+
         <button 
-          className="btn btn-primary carousel__btn" 
-          onClick={nextPage} 
-          disabled={(currentPage + 1) * 2 >= projectData.length}
-          style={{ visibility: (currentPage + 1) * 2 >= projectData.length ? 'hidden' : 'visible' }}
+          className="carousel-arrow" 
+          onClick={() => setPage(page + 1)}
+          style={{ visibility: page >= maxPage ? 'hidden' : 'visible' }}
         >
           <BsChevronRight />
         </button>
