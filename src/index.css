@@ -40,11 +40,19 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  min-height: 100vh;
-  background: linear-gradient(to bottom, var(--background_colour_variant), #ffffff);
-  background-attachment: fixed;
   color: var(--white);
   line-height: 1.7;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(to bottom, var(--background_colour_variant), #ffffff);
 }
 
 html {

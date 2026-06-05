@@ -38,7 +38,7 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 1rem;
+    border-radius: 0 0 1rem 1rem;
     padding: 2rem;
     text-align: center;
     transition: var(--transition1);
@@ -70,10 +70,11 @@
     margin: 2rem 0 2.6rem;
     color: var(--white);
     background: rgba(32, 35, 42, 0.85);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 1rem;
+    border-radius: 0 0 1rem 1rem;
     padding: 2rem;
 }
 
@@ -97,13 +98,19 @@
 
 /*Small Screen*/
 @media screen and (max-width: 600px) {
-    .experience__container {
+    .about__me {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+
+    .about__cards {
+        grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
 
-    .experience__container > div {
-        width: 100%;
-padding: 2rem 1rem;
+    .about__card {
+        background: transparent;
+        border-color: var(--primary_colour_variant);
     }
 
     .about__content {
@@ -112,5 +119,7 @@ padding: 2rem 1rem;
 
     .about__content p {
         margin: 1.5rem 0;
+        background: transparent;
+        border-color: var(--primary_colour_variant);
     }
 }
